@@ -104,6 +104,7 @@ class Network:
 		try:
 			pickle.dump(data ,self.w_stream, 1)
 			self.w_stream.flush()
+			return True
 		except:
 			return False
 
